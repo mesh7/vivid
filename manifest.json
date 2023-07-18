@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Vivid",
+    "description": "A minimal color picker chrome extension",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "pointer_icon.svg"
+    }
+}
