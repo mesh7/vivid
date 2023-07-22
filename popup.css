@@ -4,27 +4,36 @@ body {
 }
 
 .header {
-    font-weight: 700;
-    font-size: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .colorPickerButton {
-    border-radius: 0.75rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    color: white;
-    background-color: blue;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
 }
 
 .container {
   width: 340px;
-  height: 100px;
+  height: 140px;
 }
 
-.colorText {
-  color: black;
+.selectedColor {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.colorGrid {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin-right: 1rem;
 }
 
 .colorValue {
