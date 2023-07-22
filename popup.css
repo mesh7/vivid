@@ -1,0 +1,32 @@
+body {
+  margin: 1rem;
+  background-color: white;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.colorPickerButton {
+    border-radius: 0.75rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+.container {
+  width: 340px;
+  height: 100px;
+}
+
+.colorText {
+  color: black;
+}
+
+.colorValue {
+  color: black;
+}
