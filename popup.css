@@ -13,8 +13,8 @@ body {
   
   .header {
     display: flex;
-    background-color: grey;
     padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   
   .header-content {
@@ -56,6 +56,7 @@ body {
   .color-selector {
     display: flex;
     padding: 1rem;
+    background-color: #F7F6FB;
   }
   
   .color-selector-icon {
@@ -74,31 +75,57 @@ body {
     font-weight: 700;
     font-size: 1rem;
   }
-  
-  .colorPickerButton {
-    border-radius: 0.75rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    color: white;
-    background-color: blue;
-  }
-  
-  .selectedColor {
-    margin-top: 0.5rem;
+
+  .color-selected {
     display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .color-selected-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
   
-  .colorGrid {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 2px;
+  .color-selected-block {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
     margin-right: 1rem;
+    background-color: black;
   }
-  
-  .colorValue {
-    color: black;
+
+  .color-selected-info {
+    display: flex;
+    flex-direction: row;
   }
-  
+
+  .color-history {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .color-history-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .color-history-block {
+    width: 45px;
+    height: 45px;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    background-color: black;
+  }
+
+  .color-history-colors {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-history-hex-value {
+    font-size: 10px;
+  }

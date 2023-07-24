@@ -1,25 +1,27 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
     <div class="container">
+        <!-- Header of the extension popup -->
         <div class="header">
             <div class="header-icon">icon</div>
             <div class="header-content">
                 <div class="header-title">Vivid</div>
-                <div class="header-description">Made with love by Mesh</div>
+                <div class="header-description">Made with ❤️ by Mesh</div>
             </div>
-            <div class="close-ico
-            n">
+            <div class="close-icon">
                 <button type="button" class="btn-close">
                     <span class="icon-cross"></span>
                     <span class="visually-hidden">Close</span>
-                  </button>
+                </button>
             </div>
         </div>
+        <!-- Color selector -->
         <div class="color-selector">
             <div class="color-selector-icon">icon</div>
             <div class="color-selector-content">
@@ -27,19 +29,28 @@
                 <div class="color-selector-description">Tap on the color picker icon and click on color in window</div>
             </div>
         </div>
+        <!-- Selected color  -->
         <div class="color-selected">
-            <div class="color-selected-header">Selected Color</div>
-            <div class="color-selected">
-                <div class="color-selected-color">Selected color</div>
+            <div class="color-selected-title">Selected Color</div>
+            <div class="color-selected-info">
+                <div class="color-selected-block"></div>
+                <div class="color-selected-color-value">
+                    <div class="color-selected-color">RGB Value</div>
+                    <div class="color-selected-color">HEX Value</div>
+                    <div class="color-selected-color">HSL Value</div>
+                    <div class="color-selected-color">CMYK Value</div>
+                </div>
             </div>
         </div>
+        <!-- Selected color history -->
         <div class="color-history">
-            <div class="color-history-header">Color History</div>
+            <div class="color-history-title">Color History</div>
             <div class="color-history-colors">
-                <div class="color-history-color">History color</div>
+                <div class="color-history-block"></div>
+                <div class="color-history-hex-value">#000000</div>
             </div>
         </div>
-        
+
     </div>
     <script src="popup.js"></script>
 </body>
