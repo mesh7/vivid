@@ -1,41 +1,131 @@
+
+
 body {
-  margin: 1rem;
-  background-color: white;
-}
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 22rem;
+    height: 30rem;
+  }
+  
+  .header {
+    display: flex;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+  
+  .header-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+  .header-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: blueviolet;
+  }
+  
+  .header-description {
+    color: rgb(70, 70, 70);
+  }
+  
+  .btn-close {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: blueviolet;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .color-selector {
+    display: flex;
+    padding: 1rem;
+    background-color: #F7F6FB;
+  }
+  
+  .color-selector-icon {
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .color-selector-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+  
+  .color-selector-title {
+    font-weight: 700;
+    font-size: 1rem;
+  }
 
-.header {
-  font-weight: 700;
-  font-size: 1rem;
-}
+  .color-selected {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-.colorPickerButton {
-  border-radius: 0.75rem;
-  border: none;
-  outline: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  color: white;
-  background-color: blue;
-}
+  .color-selected-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .color-selected-block {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    background-color: black;
+  }
 
-.container {
-  width: 340px;
-  height: 140px;
-}
+  .color-selected-info {
+    display: flex;
+    flex-direction: row;
+  }
 
-.selectedColor {
-  margin-top: 0.5rem;
-  display: flex;
-}
+  .color-history {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-.colorGrid {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  margin-right: 1rem;
-}
+  .color-history-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
 
-.colorValue {
-  color: black;
-}
+  .color-history-block {
+    width: 45px;
+    height: 45px;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    background-color: black;
+  }
+
+  .color-history-colors {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-history-hex-value {
+    font-size: 10px;
+  }
